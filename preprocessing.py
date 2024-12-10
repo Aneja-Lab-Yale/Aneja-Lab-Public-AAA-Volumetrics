@@ -111,7 +111,7 @@ for study in tqdm(studyList, desc="Study Progress"):
 
             mask = nib.load(maskPath)
             maskData = mask.get_fdata()
-            maskMask = maskData == 255
+            maskMask = maskData == 1
 
             scan = nib.load(scanPath)
             scanData = scan.get_fdata()
